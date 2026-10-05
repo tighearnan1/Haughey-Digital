@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Around the House Service | Handyman in Mauldin, Simpsonville and Greenville (preview)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --char: #1E2428;
+    --char-2: #2A3237;
+    --tape: #3A8DDE;
+    --tape-dark: #1D5F9E;
+    --tape-light: #E6F1FC;
+    --wall: #F5F4F0;
+    --paper: #FFFFFF;
+    --grey: #5A646C;
+    --line: #E1E3DF;
+    --check: #2F9E5B;
+    --star: #F2B01E;
+    --sans: "Archivo", Arial, Helvetica, sans-serif;
+    --hand: "Caveat", "Comic Sans MS", cursive;
+    --shadow: 0 1px 2px rgba(30,36,40,.06), 0 10px 30px rgba(30,36,40,.08);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: var(--sans); color: var(--char); background: var(--paper); font-size: 1.0625rem; line-height: 1.6; padding-bottom: 76px; -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--tape); outline-offset: 3px; border-radius: 6px; }
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 0 1.25rem; }
+  h1, h2, h3 { margin: 0; line-height: 1.05; letter-spacing: -0.025em; }
+  .stars { color: var(--star); letter-spacing: .06em; }
+
+  .notice { background: #FFF6E5; color: #6B4A12; font-size: .86rem; text-align: center; padding: .5rem 1rem; }
+  .notice a { font-weight: 600; }
+
+  /* Header */
+  header.top { background: rgba(255,255,255,.94); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 10; }
+  header.top .wrap { display: flex; justify-content: space-between; align-items: center; padding-top: .75rem; padding-bottom: .75rem; gap: 1.5rem; }
+  .brand { display: flex; align-items: center; gap: .65rem; text-decoration: none; }
+  .brand-mark { width: 42px; height: 42px; border-radius: 10px; background: var(--char); display: grid; place-items: center; flex: 0 0 auto; }
+  .brand-name { font-weight: 800; font-size: 1.12rem; line-height: 1.1; }
+  .brand-name small { display: block; font-weight: 500; font-size: .76rem; color: var(--grey); }
+  .nav { display: flex; align-items: center; gap: 1.6rem; font-weight: 600; font-size: .95rem; }
+  .nav a { text-decoration: none; color: var(--grey); }
+  .nav a:hover { color: var(--char); }
+  .nav .nav-cta { background: var(--char); color: #fff; padding: .6rem 1.1rem; border-radius: 999px; }
+  .nav .nav-cta:hover { background: #000; color: #fff; }
+  @media (max-width: 900px) { .nav a:not(.nav-cta) { display: none; } }
+  @media (max-width: 560px) { .nav { display: none; } }
+
+  /* Hero */
+  .hero { background: radial-gradient(1200px 500px at 85% 0%, #EAF3FC 0%, transparent 60%), var(--wall); overflow: hidden; }
+  .hero .wrap { display: grid; grid-template-columns: 1.05fr .95fr; gap: 3.5rem; align-items: center; padding-top: 4.5rem; padding-bottom: 5rem; }
+  .rating-pill { display: inline-flex; align-items: center; gap: .55rem; background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: .4rem .9rem .4rem .5rem; font-size: .9rem; font-weight: 600; box-shadow: var(--shadow); margin-bottom: 1.4rem; }
+  .rating-pill .g { width: 24px; height: 24px; border-radius: 50%; background: #fff; border: 1px solid var(--line); display: grid; place-items: center; font-weight: 800; font-size: .8rem; color: #4285F4; }
+  .hero h1 { font-size: clamp(2.8rem, 6.6vw, 4.9rem); font-weight: 900; margin-bottom: 1.2rem; }
+  .hero h1 .hl { position: relative; white-space: nowrap; }
+  .hero h1 .hl::after { content: ""; position: absolute; left: -.08em; right: -.08em; bottom: .04em; height: .32em; background: var(--tape); opacity: .28; z-index: -1; border-radius: 2px; transform: rotate(-1deg); }
+  .hero h1 .hl { z-index: 0; }
+  .hero .lede { font-size: 1.2rem; color: var(--grey); max-width: 38ch; margin: 0 0 2rem; }
+  .btns { display: flex; flex-wrap: wrap; gap: .75rem; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: .55rem; text-decoration: none; font-weight: 700; padding: 1rem 1.5rem; border-radius: 999px; font-size: 1.05rem; transition: transform .15s ease, background .15s ease, box-shadow .15s ease; }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-dark { background: var(--char); color: #fff; box-shadow: 0 8px 20px rgba(30,36,40,.22); }
+  .btn-dark:hover { background: #000; }
+  .btn-light { background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow); }
+  .hero-points { list-style: none; padding: 0; margin: 1.8rem 0 0; display: flex; flex-wrap: wrap; gap: .5rem 1.4rem; color: var(--grey); font-size: .95rem; font-weight: 500; }
+  .hero-points li { display: flex; align-items: center; gap: .4rem; }
+
+  .hero-visual { position: relative; min-height: 470px; }
+  .hero-photo { position: absolute; top: 0; right: 0; width: 82%; aspect-ratio: 4 / 5; border-radius: 22px; overflow: hidden; box-shadow: 0 30px 60px rgba(30,36,40,.22); background: linear-gradient(135deg, #CFDCE6, #A9BCCB); transform: rotate(2deg); }
+  .hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+  .photo-tag { position: absolute; right: 14px; top: 14px; background: rgba(255,255,255,.95); border-radius: 999px; padding: .35rem .8rem; font-size: .82rem; font-weight: 700; transform: rotate(-2deg); }
+
+  .list-card { position: absolute; left: 0; bottom: 0; width: 66%; min-width: 270px; background: #fff; border-radius: 6px; padding: 2.2rem 1.5rem 1.3rem; box-shadow: 0 26px 50px rgba(30,36,40,.24); transform: rotate(-3deg);
+    background-image: repeating-linear-gradient(#fff 0 35px, #E7EEF6 35px 36px); background-position: 0 22px; }
+  .list-card::before, .list-card::after { content: ""; position: absolute; top: -13px; width: 84px; height: 26px; background: rgba(58,141,222,.85); }
+  .list-card::before { left: 18px; transform: rotate(-7deg); }
+  .list-card::after { right: 18px; transform: rotate(6deg); }
+  .list-title { font-family: var(--hand); font-weight: 700; font-size: 1.75rem; margin: 0 0 .1rem; line-height: 1; }
+  .todo { list-style: none; margin: 0; padding: 0; }
+  .todo li { font-family: var(--hand); font-size: 1.4rem; height: 36px; display: flex; align-items: center; gap: .6rem; color: #2A3A4A; }
+  .box { width: 20px; height: 20px; border: 2px solid #8796A5; border-radius: 4px; flex: 0 0 auto; display: grid; place-items: center; background: #fff; transition: border-color .2s; }
+  .box svg { opacity: 0; transform: scale(.4); transition: opacity .25s, transform .25s; }
+  .todo .txt { position: relative; white-space: nowrap; }
+  .todo .txt::after { content: ""; position: absolute; left: -2px; right: -4px; top: 55%; height: 2px; background: #8796A5; transform: scaleX(0); transform-origin: left; transition: transform .35s ease .1s; }
+  .todo li.done .box { border-color: var(--check); }
+  .todo li.done .box svg { opacity: 1; transform: scale(1); }
+  .todo li.done .txt { color: #8796A5; }
+  .todo li.done .txt::after { transform: scaleX(1); }
+  .list-sign { font-family: var(--hand); font-size: 1.35rem; color: var(--tape-dark); text-align: right; margin: .3rem 0 0; }
+
+  @media (max-width: 900px) {
+    .hero .wrap { grid-template-columns: 1fr; gap: 3rem; padding-top: 3rem; }
+    .hero-visual { min-height: 420px; max-width: 480px; width: 100%; justify-self: center; }
+  }
+  @media (max-width: 480px) {
+    .hero-visual { min-height: 400px; }
+    .hero-photo { width: 78%; }
+    .list-card { width: 84%; }
+    .todo li { font-size: 1.3rem; }
+  }
+
+  /* Trust */
+  .trust { border-bottom: 1px solid var(--line); }
+  .trust .wrap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; padding-top: 1.8rem; padding-bottom: 1.8rem; }
+  .trust-item { display: flex; gap: .8rem; align-items: center; }
+  .t-icon { width: 44px; height: 44px; border-radius: 12px; background: var(--tape-light); display: grid; place-items: center; flex: 0 0 auto; }
+  .trust-item b { display: block; line-height: 1.25; }
+  .trust-item span { color: var(--grey); font-size: .9rem; line-height: 1.3; display: block; }
+  @media (max-width: 860px) { .trust .wrap { grid-template-columns: 1fr 1fr; } }
+
+  section { padding: 5rem 0; }
+  .s-title { font-size: clamp(2.1rem, 4.6vw, 3.2rem); font-weight: 900; margin-bottom: .8rem; }
+  .s-lede { color: var(--grey); max-width: 56ch; margin: 0 0 2.6rem; font-size: 1.1rem; }
+
+  /* Services */
+  .services { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+  .svc { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 1.5rem 1.3rem; transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+  .svc:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: #CFD8DF; }
+  .s-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--tape-light); display: grid; place-items: center; margin-bottom: 1rem; }
+  .svc h3 { font-size: 1.12rem; margin-bottom: .35rem; letter-spacing: -0.01em; }
+  .svc p { margin: 0; color: var(--grey); font-size: .96rem; line-height: 1.5; }
+  @media (max-width: 960px) { .services { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 520px) { .services { grid-template-columns: 1fr; } .svc { display: grid; grid-template-columns: 48px 1fr; gap: 0 1rem; } .s-icon { margin: 0; grid-row: span 2; } }
+
+  /* Work gallery */
+  .work { background: var(--wall); }
+  .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: .8rem; }
+  .gallery button { all: unset; cursor: zoom-in; display: block; aspect-ratio: 1; border-radius: 14px; overflow: hidden; background: linear-gradient(135deg, #DCE3E8, #C7D2DA); position: relative; }
+  .gallery button:focus-visible { outline: 3px solid var(--tape); outline-offset: 3px; }
+  .gallery button:first-child { grid-column: span 2; grid-row: span 2; }
+  .gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+  .gallery button:hover img { transform: scale(1.05); }
+  .gallery .extra { display: none; }
+  .gallery.show-all .extra { display: block; }
+  .more-row { text-align: center; margin-top: 1.8rem; }
+  .more-btn { font: inherit; font-weight: 700; background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow); border-radius: 999px; padding: .85rem 1.5rem; cursor: pointer; }
+  .more-btn:hover { background: var(--char); color: #fff; }
+  @media (max-width: 760px) { .gallery { grid-template-columns: 1fr 1fr; } }
+  .lightbox { position: fixed; inset: 0; z-index: 50; background: rgba(12,15,17,.93); display: none; align-items: center; justify-content: center; padding: 1rem; }
+  .lightbox.open { display: flex; }
+  .lightbox img { max-width: 100%; max-height: 82vh; border-radius: 10px; }
+  .lb-btn { position: absolute; background: rgba(255,255,255,.12); color: #fff; border: 0; width: 48px; height: 48px; border-radius: 50%; font-size: 1.6rem; cursor: pointer; }
+  .lb-btn:hover { background: rgba(255,255,255,.25); }
+  .lb-close { top: calc(1rem + env(safe-area-inset-top, 0px)); right: 1rem; }
+  .lb-prev { left: 1rem; top: 50%; transform: translateY(-50%); }
+  .lb-next { right: 1rem; top: 50%; transform: translateY(-50%); }
+
+  /* Steps */
+  .steps-sec { background: var(--char); color: #fff; position: relative; overflow: hidden; }
+  .steps-sec .s-lede { color: #AEB8BF; }
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; counter-reset: s; }
+  .steps li { counter-increment: s; background: var(--char-2); border: 1px solid #39434A; border-radius: 16px; padding: 1.6rem; }
+  .steps li::before { content: counter(s); display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--tape); color: #fff; font-weight: 800; margin-bottom: 1rem; }
+  .steps h3 { font-size: 1.3rem; margin-bottom: .4rem; }
+  .steps p { margin: 0; color: #C3CCD2; }
+  @media (max-width: 860px) { .steps { grid-template-columns: 1fr; } }
+
+  /* Reviews */
+  .reviews-head { display: flex; justify-content: space-between; align-items: end; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2.4rem; }
+  .score { display: flex; align-items: center; gap: .9rem; background: var(--wall); border-radius: 16px; padding: .9rem 1.2rem; }
+  .score b { font-size: 2.6rem; font-weight: 900; line-height: 1; }
+  .score span { color: var(--grey); line-height: 1.35; font-size: .92rem; }
+  .reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+  .review { position: relative; background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 1.8rem 1.6rem 1.5rem; box-shadow: var(--shadow); }
+  .review::before { content: "\201C"; position: absolute; top: .2rem; right: 1.2rem; font-size: 4.5rem; line-height: 1; color: var(--tape-light); font-family: Georgia, serif; }
+  .review p { margin: .7rem 0 1.1rem; font-size: 1.02rem; }
+  .review cite { font-style: normal; color: var(--grey); font-size: .88rem; display: flex; align-items: center; gap: .5rem; }
+  .review cite i { width: 22px; height: 22px; border-radius: 50%; border: 1px solid var(--line); display: grid; place-items: center; font-style: normal; font-weight: 800; font-size: .72rem; color: #4285F4; }
+  @media (max-width: 860px) { .reviews { grid-template-columns: 1fr; } }
+
+  /* Area */
+  .area { padding-top: 0; }
+  .area-card { background: var(--wall); border-radius: 22px; padding: 2.4rem; display: grid; grid-template-columns: 1.2fr .8fr; gap: 2.5rem; }
+  .towns { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+  .towns li { background: #fff; border: 1px solid var(--line); font-weight: 600; padding: .4rem .95rem; border-radius: 999px; font-size: .95rem; }
+  .hours { background: #fff; border-radius: 16px; padding: 1.5rem; box-shadow: var(--shadow); align-self: start; }
+  .hours h3 { font-size: 1.3rem; margin-bottom: .6rem; }
+  .hours table { width: 100%; border-collapse: collapse; }
+  .hours td { padding: .5rem 0; border-bottom: 1px solid var(--line); }
+  .hours td:last-child { text-align: right; font-weight: 600; }
+  .hours tr:last-child td { border-bottom: 0; }
+  @media (max-width: 860px) { .area-card { grid-template-columns: 1fr; padding: 1.6rem; } }
+
+  /* Quote */
+  .quote { background: var(--char); color: #fff; }
+  .quote .s-lede { color: #AEB8BF; }
+  .quote-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 3rem; align-items: start; }
+  .ways a { display: flex; align-items: center; gap: 1rem; text-decoration: none; margin-bottom: 1rem; background: var(--char-2); border: 1px solid #39434A; border-radius: 14px; padding: 1rem 1.2rem; }
+  .ways a:hover { border-color: var(--tape); }
+  .ways .w-icon { width: 44px; height: 44px; border-radius: 12px; background: var(--tape); display: grid; place-items: center; flex: 0 0 auto; }
+  .ways strong { display: block; font-size: 1.15rem; }
+  .ways span { color: #AEB8BF; font-size: .9rem; }
+  form { background: #fff; color: var(--char); border-radius: 20px; padding: 1.8rem; display: grid; gap: 1rem; box-shadow: 0 30px 60px rgba(0,0,0,.25); }
+  form h3 { font-size: 1.4rem; }
+  label { font-weight: 600; font-size: .93rem; display: grid; gap: .35rem; }
+  input, textarea { font: inherit; padding: .8rem .9rem; border: 1px solid #C8CFD4; border-radius: 10px; width: 100%; background: #FBFBFA; }
+  input:focus, textarea:focus { outline: none; border-color: var(--tape); box-shadow: 0 0 0 3px var(--tape-light); background: #fff; }
+  textarea { min-height: 110px; resize: vertical; }
+  form button { font: inherit; font-weight: 700; background: var(--tape); color: #fff; border: 0; border-radius: 999px; padding: 1rem; cursor: pointer; font-size: 1.05rem; }
+  form button:hover { background: var(--tape-dark); }
+  .form-note { margin: 0; font-size: .84rem; color: var(--grey); text-align: center; }
+  @media (max-width: 860px) { .quote-grid { grid-template-columns: 1fr; } }
+
+  footer { background: #15191C; color: #8F9AA2; font-size: .88rem; padding: 1.5rem 0; }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .8rem; }
+
+  .callbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: rgba(255,255,255,.96); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-top: 1px solid var(--line); padding: .6rem .8rem calc(.6rem + env(safe-area-inset-bottom, 0px)); display: none; gap: .6rem; }
+  .callbar a { flex: 1; text-align: center; text-decoration: none; font-weight: 700; padding: .85rem; border-radius: 999px; }
+  .callbar .c1 { background: var(--char); color: #fff; }
+  .callbar .c2 { background: var(--tape-light); color: var(--tape-dark); }
+  @media (max-width: 760px) { .callbar { display: flex; } }
+  @media (min-width: 761px) { body { padding-bottom: 0; } }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+<div class="notice">
+  This is a free concept design for Around the House Service, made by <a href="https://haughey-digital.netlify.app">Haughey Digital</a>. It isn't live yet.
+</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 11.5 12 4l9 7.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 10v9h12v-9" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"/><path d="M10 19v-5h4v5" stroke="#3A8DDE" stroke-width="2.2" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="brand-name">Around the House Service<small>Handyman for the Upstate, SC</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#work">Our work</a>
+      <a href="#reviews">Reviews</a>
+      <a class="nav-cta" href="#quote">Free quote</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <!-- EDIT: confirm current rating and count on Google -->
+        <div class="rating-pill"><span class="g">G</span><span class="stars" aria-hidden="true">★★★★★</span> 5.0 from 100+ reviews</div>
+        <h1>Your to-do list, <span class="hl">done right.</span></h1>
+        <p class="lede">TVs hung, fans installed, rooms painted, leaks fixed. Honest, reliable handyman service for homes and businesses across Mauldin, Simpsonville and Greenville.</p>
+        <div class="btns">
+          <a class="btn btn-dark" href="tel:+18647071140">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg>
+            Call (864) 707-1140
+          </a>
+          <a class="btn btn-light" href="sms:+18647071140">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"/><circle cx="12" cy="12.5" r="3.2"/><path d="M8 6l1.5-2h5L16 6"/></svg>
+            Text a photo of the job
+          </a>
+        </div>
+        <ul class="hero-points">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F9E5B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Licensed and insured</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F9E5B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>No job too small</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2F9E5B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Free quotes</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-photo">
+          <img id="heroPhoto" alt="A recent Around the House Service project">
+          <span class="photo-tag">Recent job</span>
+        </div>
+        <div class="list-card" aria-label="Example to-do list being checked off">
+          <p class="list-title">Honey-do list</p>
+          <ul class="todo">
+            <li><span class="box"><svg width="13" height="13" viewBox="0 0 14 14"><path d="M2 7.5l3 3 7-7.5" stroke="#2F9E5B" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="txt">Hang TV in living room</span></li>
+            <li><span class="box"><svg width="13" height="13" viewBox="0 0 14 14"><path d="M2 7.5l3 3 7-7.5" stroke="#2F9E5B" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="txt">Fix the dripping faucet</span></li>
+            <li><span class="box"><svg width="13" height="13" viewBox="0 0 14 14"><path d="M2 7.5l3 3 7-7.5" stroke="#2F9E5B" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="txt">New ceiling fan</span></li>
+            <li><span class="box"><svg width="13" height="13" viewBox="0 0 14 14"><path d="M2 7.5l3 3 7-7.5" stroke="#2F9E5B" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="txt">Paint the guest room</span></li>
+          </ul>
+          <p class="list-sign">All done. Call James!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="trust">
+    <div class="wrap">
+      <div class="trust-item"><span class="t-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5F9E" stroke-width="2" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4" stroke-linecap="round"/></svg></span><div><b>Licensed and insured</b><span>Peace of mind on every job</span></div></div>
+      <div class="trust-item"><span class="t-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="#1D5F9E"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg></span><div><b>100+ five-star reviews</b><span>From local homeowners</span></div></div>
+      <div class="trust-item"><span class="t-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5F9E" stroke-width="2" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg></span><div><b>Homes and businesses</b><span>Residential and commercial</span></div></div>
+      <div class="trust-item"><span class="t-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5F9E" stroke-width="2" stroke-linecap="round"><path d="M12 3v18M17 7.5c0-1.7-2.2-3-5-3s-5 1.3-5 3 2.2 2.8 5 3.2 5 1.6 5 3.3-2.2 3-5 3-5-1.3-5-3"/></svg></span><div><b>Free, upfront quotes</b><span>Know the price first</span></div></div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <h2 class="s-title">Big or small, we handle it</h2>
+      <p class="s-lede">Every client gets the same quality of workmanship, whether it's one quick fix or a whole list of projects.</p>
+      <div class="services">
+        <div class="svc"><span class="s-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1D5F9E" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="11" rx="1.5"/><path d="M9 20h6M12 16v4"/></svg></span><h3>TV mounting</h3><p>TVs hung securely and level, with cables tidied away.</p></div>
+        <div class="svc"><span class="s-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1D5F9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M4 9h16l-2.5 3h-11z"/><path d="M12 12v3"/><circle cx="12" cy="17" r="2"/></svg></span><h3>Fans and lighting</h3><p>Ceiling fans, light fixtures, chandeliers and dimmers.</p></div>
+        <div class="svc"><span class="s-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1D5F9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h9a3 3 0 0 1 3 3v1"/><path d="M4 6v6"/><path d="M16 16.5c0 1.5-1 2.3-1 3.2a1 1 0 0 0 2 0c0-.9-1-1.7-1-3.2z"/></svg></span><h3>Plumbing repairs</h3><p>Leaky faucets, toilets, spigots and fixture swaps.</p></div>
+        <div class="svc"><span class="s-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1D5F9E" stroke-width="2" stroke-linejoin="round"><rect x="4" y="3" width="14" height="6" rx="1"/><path d="M18 6h2v5h-8v3"/><rect x="10.5" y="14" width="3" height="7" rx="1"/></svg></span><h3>Painting</h3><p>Interior rooms, trim and doors, finished cleanly.</p></div>
+        <div class="svc"><span class="s-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1D5F9E" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="1.5"/><path d="M8 12h8M12 8v8"/></svg></span><h3>Drywall repair</h3><p>Holes, cracks and water damage patched and smoothed.</p></div>
+        <div class="svc"><span class="s-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1D5F9E" stroke-width="2" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="1"/><circle cx="15" cy="12" r="1" fill="#1D5F9E"/></svg></span><h3>Doors and exterior</h3><p>Door and threshold repairs, siding fixes, awnings.</p></div>
+        <div class="svc"><span class="s-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1D5F9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5l3 3L9 18H6v-3z"/><path d="M13 8l3 3"/></svg></span><h3>Assembly</h3><p>Furniture, gazebos, sheds and outdoor equipment.</p></div>
+        <div class="svc"><span class="s-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1D5F9E" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/><path d="M7 7v10M17 7v10"/></svg></span><h3>Shelving and carpentry</h3><p>Shelves, posts, trim and small carpentry projects.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="wrap">
+      <h2 class="s-title">Recent work</h2>
+      <p class="s-lede">A few of the jobs we've finished around the Upstate. Tap any photo to see it bigger.</p>
+      <!-- Photos load from the current Wix site for this preview. For the real site, copy them over and host them with the page. -->
+      <div class="gallery" id="gallery"></div>
+      <div class="more-row"><button class="more-btn" id="moreBtn" type="button">See all 25 projects</button></div>
+    </div>
+  </section>
+
+  <section class="steps-sec">
+    <div class="wrap">
+      <h2 class="s-title">Getting it done is easy</h2>
+      <p class="s-lede">No long forms and no waiting around for a callback.</p>
+      <ol class="steps">
+        <li><h3>Send a photo</h3><p>Text a picture of the job and a quick description. A whole list is fine too.</p></li>
+        <li><h3>Get a fair quote</h3><p>You'll get a clear, upfront price fast, and a time that works for you.</p></li>
+        <li><h3>Cross it off</h3><p>James arrives on time, does the job right and leaves everything clean.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="wrap">
+      <div class="reviews-head">
+        <div>
+          <h2 class="s-title" style="margin:0">What neighbors say</h2>
+        </div>
+        <div class="score"><b>5.0</b><span><span class="stars" aria-hidden="true">★★★★★</span><br>100+ Google reviews</span></div>
+      </div>
+      <!-- EDIT: swap these summaries for real Google reviews, with James's go-ahead -->
+      <div class="reviews">
+        <div class="review"><span class="stars" aria-label="5 stars">★★★★★</span><p>Storm loosened our siding. James came out quickly, fixed it in minutes and even removed a wasp nest while he was up there.</p><cite><i>G</i>Google review</cite></div>
+        <div class="review"><span class="stars" aria-label="5 stars">★★★★★</span><p>Assembled three large gazebos in one long day and transformed our patio. Couldn't have done it without them.</p><cite><i>G</i>Google review</cite></div>
+        <div class="review"><span class="stars" aria-label="5 stars">★★★★★</span><p>Painted several rooms for us. Professional, careful and kept everything clean and tidy the whole time.</p><cite><i>G</i>Google review</cite></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="area">
+    <div class="wrap">
+      <div class="area-card">
+        <div>
+          <h2 class="s-title">Where we work</h2>
+          <p class="s-lede" style="margin-bottom:1.3rem">Based in Mauldin and serving homes and businesses across the Upstate.</p>
+          <!-- EDIT: confirm service area -->
+          <ul class="towns"><li>Mauldin</li><li>Simpsonville</li><li>Greenville</li><li>Five Forks</li><li>Fountain Inn</li><li>Greer</li><li>Taylors</li></ul>
+        </div>
+        <div class="hours">
+          <h3>Hours</h3>
+          <table>
+            <tr><td>Monday to Friday</td><td>8am to 7pm</td></tr>
+            <tr><td>Saturday</td><td>10am to 3pm</td></tr>
+            <tr><td>Sunday</td><td>10am to 3pm</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote" id="quote">
+    <div class="wrap quote-grid">
+      <div>
+        <h2 class="s-title">Let's tackle your list</h2>
+        <p class="s-lede">Call, text or send your list. You'll hear back fast with a free, upfront quote.</p>
+        <div class="ways">
+          <a href="tel:+18647071140"><span class="w-icon"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="#fff"/></svg></span><div><strong>(864) 707-1140</strong><span>Call or text, seven days a week</span></div></a>
+          <a href="mailto:schandy911@gmail.com"><span class="w-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><div><strong>schandy911@gmail.com</strong><span>Send your list any time</span></div></a>
+        </div>
+      </div>
+      <form id="quoteForm">
+        <h3>Request a free quote</h3>
+        <label>Your name<input name="name" type="text" autocomplete="name" required></label>
+        <label>Phone number<input name="phone" type="tel" autocomplete="tel" required></label>
+        <label>What's on your list?<textarea name="message" required></textarea></label>
+        <button type="submit">Send my request</button>
+        <p class="form-note">This preview opens your email app with your message filled in.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Around the House Service, Mauldin, SC. Licensed and insured.</span>
+    <span>Concept design by <a href="https://haughey-digital.netlify.app">Haughey Digital</a></span>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project photo">
+  <button class="lb-btn lb-close" type="button" aria-label="Close">&times;</button>
+  <button class="lb-btn lb-prev" type="button" aria-label="Previous photo">&#8249;</button>
+  <img alt="Project photo, enlarged">
+  <button class="lb-btn lb-next" type="button" aria-label="Next photo">&#8250;</button>
+</div>
+
+<div class="callbar">
+  <a class="c1" href="tel:+18647071140">Call James</a>
+  <a class="c2" href="sms:+18647071140">Text a photo</a>
+</div>
+
+<script>
+  document.getElementById('quoteForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var f = e.target;
+    var body = 'Name: ' + f.name.value + '\nPhone: ' + f.phone.value + '\n\n' + f.message.value;
+    location.href = 'mailto:schandy911@gmail.com?subject=' + encodeURIComponent('Quote request from ' + f.name.value) + '&body=' + encodeURIComponent(body);
+  });
+
+  (function () {
+    var items = document.querySelectorAll('.todo li');
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { items.forEach(function (li) { li.classList.add('done'); }); return; }
+    var i = 0;
+    function tick() {
+      if (i < items.length) { items[i].classList.add('done'); i++; setTimeout(tick, 900); }
+      else { setTimeout(function () { items.forEach(function (li) { li.classList.remove('done'); }); i = 0; setTimeout(tick, 900); }, 3200); }
+    }
+    setTimeout(tick, 900);
+  })();
+
+  (function () {
+    var ids = ["5cb1d8aa9c974d51b708433748863f24","93020dde75884f6abe6e47541b26fa57","a091da625c91452199a043d09c9bf930","c922bdca1af447d6a86b7ed60a5660c5","516ce2484c694e1197db53b9cd914724","fa98c0beafae412e99e296bd88c04ff8","f91573495629476a9bbe9bc37143891f","6813b2626738427fa11d93ac83eb6eaf","750a56adc3b64b0c80bea468c6adb971","e1428c1b972942c1b6993650d5f013e4","d6daaa76727545c183ca358279e8a9fb","f8d10e36b2084756ac536e7ef2c2c7d9","af52b5d2aba3440497fcfe189e568a28","ee2b98c4becc461394d371ce8a15c289","c5ef120e7a644fa5901f9db4a53037f1","b0363e01c103497b958ae619a88f3019","992aebb17e93430389585c8c398e4920","d6fcf8a8a96e45098eeb8306b433df88","1cd46a8422f34e77bd0d69874a2497cb","3f0dd197b90443a8af2cd20af3d9726e","6766a494d3dd44bbb36e612a12540c35","eb3465eec0ef4fae8a8598968539d325","5e4da3f36cd041bc8b76194335247509","fb61cfee7eb242fda74ccbc00f40ddd7","533d62bbd418433791766013cf1c1698"];
+    var base = 'https://static.wixstatic.com/media/03ddd0_';
+    function url(id, w, h) { h = h || w; return base + id + '~mv2.jpg/v1/fill/w_' + w + ',h_' + h + ',q_90,enc_avif,quality_auto/' + id + '.jpg'; }
+
+    // EDIT: change HERO to the number of the best-looking photo (0 is the first)
+    var HERO = 1;
+    var hp = document.getElementById('heroPhoto');
+    hp.src = url(ids[HERO], 800, 1000);
+    hp.onerror = function () { hp.style.display = 'none'; };
+
+    var g = document.getElementById('gallery');
+    ids.forEach(function (id, i) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('aria-label', 'Open project photo ' + (i + 1));
+      if (i >= 9) b.className = 'extra';
+      var img = document.createElement('img');
+      img.loading = 'lazy';
+      img.alt = 'Completed handyman project ' + (i + 1);
+      img.src = url(id, i === 0 ? 900 : 500);
+      img.onerror = function () { img.style.display = 'none'; };
+      b.appendChild(img);
+      b.addEventListener('click', function () { open(i); });
+      g.appendChild(b);
+    });
+    var more = document.getElementById('moreBtn');
+    more.addEventListener('click', function () {
+      var on = g.classList.toggle('show-all');
+      more.textContent = on ? 'Show fewer' : 'See all 25 projects';
+    });
+    var lb = document.getElementById('lightbox'), lbImg = lb.querySelector('img'), cur = 0;
+    function open(i) { cur = i; lbImg.src = url(ids[i], 1400); lb.classList.add('open'); lb.querySelector('.lb-close').focus(); }
+    function close() { lb.classList.remove('open'); }
+    function step(d) { open((cur + d + ids.length) % ids.length); }
+    lb.querySelector('.lb-close').addEventListener('click', close);
+    lb.querySelector('.lb-prev').addEventListener('click', function () { step(-1); });
+    lb.querySelector('.lb-next').addEventListener('click', function () { step(1); });
+    lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+    var sx = null;
+    lb.addEventListener('touchstart', function (e) { sx = e.touches[0].clientX; }, { passive: true });
+    lb.addEventListener('touchend', function (e) { if (sx === null) return; var dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 40) step(dx < 0 ? 1 : -1); sx = null; });
+    document.addEventListener('keydown', function (e) {
+      if (!lb.classList.contains('open')) return;
+      if (e.key === 'Escape') close();
+      if (e.key === 'ArrowLeft') step(-1);
+      if (e.key === 'ArrowRight') step(1);
+    });
+  })();
+</script>
+</body>
+</html>
