@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Very Good Plumbing | Plumber in Dundonald and Belfast (preview)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #12355B;
+    --water: #2F80C9;
+    --mist: #EAF3FB;
+    --copper: #C2702F;
+    --copper-dark: #A55C22;
+    --ink: #17212B;
+    --grey: #55636F;
+    --line: #D9E3EC;
+    --white: #FFFFFF;
+    --head: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+    --body: "Barlow", Arial, Helvetica, sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: var(--body); color: var(--ink); background: var(--white); font-size: 1.0625rem; line-height: 1.6; padding-bottom: 72px; }
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--copper); outline-offset: 3px; border-radius: 4px; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
+  h1, h2, h3 { font-family: var(--head); line-height: 1.02; margin: 0; letter-spacing: .005em; }
+
+  /* Preview notice */
+  .notice { background: #FFF6E5; color: #6B4A12; font-size: .88rem; text-align: center; padding: .55rem 1rem; border-bottom: 1px solid #F1DDB4; }
+  .notice a { font-weight: 600; }
+
+  /* Header */
+  header.top { background: var(--white); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 10; }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; padding-top: .8rem; padding-bottom: .8rem; gap: 1rem; }
+  .brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; }
+  .brand-mark { width: 38px; height: 38px; border-radius: 50%; background: var(--navy); display: grid; place-items: center; }
+  .brand-name { font-family: var(--head); font-weight: 800; font-size: 1.45rem; color: var(--navy); line-height: 1; }
+  .brand-name small { display: block; font-family: var(--body); font-weight: 500; font-size: .78rem; color: var(--grey); margin-top: .15rem; }
+  .head-call { text-decoration: none; font-weight: 700; color: var(--navy); white-space: nowrap; }
+  .head-call span { display: block; font-size: .78rem; font-weight: 500; color: var(--grey); text-align: right; }
+  @media (max-width: 560px) { .head-call { display: none; } }
+
+  /* Hero */
+  .hero { background: var(--navy); color: var(--white); position: relative; overflow: hidden; }
+  .hero .wrap { padding-top: 3.5rem; padding-bottom: 3.5rem; display: grid; grid-template-columns: 1.2fr .8fr; gap: 3rem; align-items: center; position: relative; z-index: 1; }
+  .hero h1 { font-size: clamp(2.8rem, 7vw, 5rem); font-weight: 800; text-transform: uppercase; margin-bottom: 1.1rem; }
+  .hero p { font-size: 1.2rem; color: #D2E2F2; max-width: 36ch; margin: 0 0 1.8rem; }
+  .btn-call {
+    display: inline-flex; align-items: center; gap: .6rem;
+    background: var(--copper); color: var(--white);
+    font-family: var(--head); font-weight: 700; font-size: 1.5rem; letter-spacing: .01em;
+    text-decoration: none; padding: .85rem 1.5rem; border-radius: 8px;
+  }
+  .btn-call:hover { background: var(--copper-dark); }
+  .btn-text { display: inline-block; margin-left: 1rem; color: var(--white); font-weight: 600; }
+  @media (max-width: 560px) { .btn-text { display: block; margin: 1rem 0 0; } }
+  .hero .hero-meta { margin: 1.6rem 0 0; color: #A8C1DA; font-size: .98rem; }
+  .pipe { position: absolute; right: -40px; top: 0; bottom: 0; width: 46%; opacity: .16; pointer-events: none; }
+
+  .rating-card { background: var(--white); color: var(--ink); border-radius: 12px; padding: 1.6rem; box-shadow: 0 18px 40px rgba(5, 20, 40, .35); }
+  .stars { color: #F2B01E; font-size: 1.5rem; letter-spacing: .1em; }
+  .rating-num { font-family: var(--head); font-weight: 800; font-size: 3.4rem; line-height: 1; color: var(--navy); }
+  .rating-card p { margin: .4rem 0 1rem; color: var(--grey); font-size: 1rem; }
+  .rating-card blockquote { margin: 0; padding-top: 1rem; border-top: 1px solid var(--line); font-size: 1.02rem; }
+  .rating-card cite { display: block; font-style: normal; color: var(--grey); font-size: .9rem; margin-top: .4rem; }
+
+  /* Trust strip */
+  .trust { background: var(--mist); border-bottom: 1px solid var(--line); }
+  .trust .wrap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; padding-top: 1.4rem; padding-bottom: 1.4rem; }
+  .trust div { font-weight: 600; color: var(--navy); line-height: 1.3; }
+  .trust div span { display: block; font-weight: 400; color: var(--grey); font-size: .92rem; }
+  @media (max-width: 760px) { .trust .wrap { grid-template-columns: 1fr 1fr; } }
+
+  section { padding: 4.5rem 0; }
+  .section-title { font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 800; color: var(--navy); text-transform: uppercase; margin-bottom: .8rem; }
+  .section-lede { color: var(--grey); max-width: 58ch; margin: 0 0 2.5rem; font-size: 1.1rem; }
+
+  /* Services */
+  .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 2px solid var(--navy); }
+  .service { padding: 1.6rem 1.4rem 1.6rem 0; border-bottom: 1px solid var(--line); }
+  .service:not(:nth-child(3n+1)) { padding-left: 1.4rem; border-left: 1px solid var(--line); }
+  .service h3 { font-size: 1.6rem; color: var(--navy); margin-bottom: .4rem; }
+  .service p { margin: 0; color: var(--grey); }
+  @media (max-width: 860px) {
+    .services { grid-template-columns: 1fr; }
+    .service, .service:not(:nth-child(3n+1)) { padding: 1.3rem 0; border-left: 0; }
+  }
+
+  /* About */
+  .about { background: var(--mist); }
+  .about .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; }
+  .about-photo { aspect-ratio: 4/3; border-radius: 12px; background: linear-gradient(135deg, #CFE0F1, #B5CDE5); display: grid; place-items: center; color: var(--navy); font-weight: 600; text-align: center; padding: 1rem; }
+  .about p { margin: 0 0 1rem; max-width: 56ch; }
+  .about .sign { font-family: var(--head); font-size: 1.6rem; color: var(--navy); font-weight: 700; }
+
+  /* Reviews */
+  .reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+  .review { border-left: 4px solid var(--copper); padding-left: 1.2rem; }
+  .review .stars { font-size: 1.1rem; }
+  .review p { margin: .5rem 0; font-size: 1.05rem; }
+  .review cite { font-style: normal; color: var(--grey); font-size: .92rem; }
+  .reviews-link { display: inline-block; margin-top: 2rem; font-weight: 700; color: var(--water); }
+  @media (max-width: 860px) { .reviews { grid-template-columns: 1fr; } }
+
+  /* Area + hours */
+  .area .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 3rem; }
+  .towns { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .5rem; padding: 0; list-style: none; }
+  .towns li { background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: .35rem .9rem; font-weight: 500; color: var(--navy); }
+  .hours { align-self: start; border: 2px solid var(--navy); border-radius: 12px; padding: 1.6rem; }
+  .hours h3 { font-size: 1.8rem; color: var(--navy); margin-bottom: .8rem; }
+  .hours table { width: 100%; border-collapse: collapse; }
+  .hours td { padding: .45rem 0; border-bottom: 1px solid var(--line); }
+  .hours td:last-child { text-align: right; font-weight: 600; }
+  .hours tr:last-child td { border-bottom: 0; }
+  @media (max-width: 860px) { .area .wrap, .about .wrap, .hero .wrap { grid-template-columns: 1fr; } }
+
+  /* Contact */
+  .contact { background: var(--navy); color: var(--white); }
+  .contact .section-title { color: var(--white); }
+  .contact .section-lede { color: #C3D6EA; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+  .contact-ways a { display: block; text-decoration: none; margin-bottom: 1.4rem; }
+  .contact-ways strong { display: block; font-family: var(--head); font-size: 2rem; line-height: 1.1; }
+  .contact-ways span { color: #A8C1DA; font-size: .95rem; }
+  form { background: var(--white); color: var(--ink); border-radius: 12px; padding: 1.6rem; display: grid; gap: 1rem; }
+  label { font-weight: 600; font-size: .95rem; display: grid; gap: .35rem; }
+  input, textarea { font: inherit; padding: .7rem .8rem; border: 1px solid #B9C7D4; border-radius: 6px; width: 100%; }
+  textarea { min-height: 110px; resize: vertical; }
+  form button { font: inherit; font-weight: 700; background: var(--copper); color: var(--white); border: 0; border-radius: 8px; padding: .9rem; cursor: pointer; font-size: 1.05rem; }
+  form button:hover { background: var(--copper-dark); }
+  .form-note { font-size: .85rem; color: var(--grey); margin: 0; }
+  @media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
+
+  footer { background: #0C2541; color: #9DB5CE; font-size: .9rem; padding: 1.6rem 0; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .8rem; }
+
+  /* Sticky mobile call bar */
+  .callbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: var(--white); border-top: 1px solid var(--line); padding: .6rem .8rem calc(.6rem + env(safe-area-inset-bottom, 0px)); display: none; gap: .6rem; }
+  .callbar a { flex: 1; text-align: center; text-decoration: none; font-weight: 700; padding: .8rem; border-radius: 8px; }
+  .callbar .c1 { background: var(--copper); color: var(--white); }
+  .callbar .c2 { background: var(--mist); color: var(--navy); }
+  @media (max-width: 760px) { .callbar { display: flex; } }
+  @media (min-width: 761px) { body { padding-bottom: 0; } }
+</style>
+</head>
+<body>
+
+<div class="notice">
+  This is a free concept design for Very Good Plumbing, made by <a href="https://haugheydigital.com">Haughey Digital</a>. It isn't live yet.
+</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24"><path d="M12 2.5C12 2.5 5.5 10 5.5 14.5a6.5 6.5 0 0 0 13 0C18.5 10 12 2.5 12 2.5z" fill="#2F80C9"/><path d="M9.2 14.6a2.9 2.9 0 0 0 2.8 2.9" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+      </span>
+      <span class="brand-name">Very Good Plumbing<small>Dundonald and greater Belfast</small></span>
+    </a>
+    <a class="head-call" href="tel:+447418020676">07418 020676<span>Mon to Fri, 8am to 5pm</span></a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <svg class="pipe" viewBox="0 0 400 600" aria-hidden="true" preserveAspectRatio="xMaxYMid slice">
+      <path d="M60 -20 V220 a60 60 0 0 0 60 60 H300 a60 60 0 0 1 60 60 V640" stroke="#FFFFFF" stroke-width="44" fill="none"/>
+      <rect x="30" y="140" width="60" height="28" rx="4" fill="#FFFFFF"/>
+      <rect x="330" y="420" width="60" height="28" rx="4" fill="#FFFFFF"/>
+    </svg>
+    <div class="wrap">
+      <div>
+        <h1>Plumbing done very well.</h1>
+        <p>Leaks, taps, showers and bathrooms across Dundonald and greater Belfast, from a time-served plumber who tells you straight what needs doing.</p>
+        <a class="btn-call" href="tel:+447418020676">
+          <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg>
+          Call Andy
+        </a>
+        <a class="btn-text" href="#contact">or send a message</a>
+        <p class="hero-meta">In the trade since 2002. Honest advice, tidy work, fair prices.</p>
+      </div>
+
+      <!-- EDIT: rating and review count from Andy's Google Business Profile -->
+      <aside class="rating-card" aria-label="Google rating">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <div class="rating-num">5.0</div>
+        <p>from 130+ Google reviews</p>
+        <blockquote>
+          Fitted us in at short notice and sorted the problem in under an hour, after other plumbers couldn't find it.
+          <cite>Google review</cite>
+        </blockquote>
+      </aside>
+    </div>
+  </div>
+
+  <div class="trust">
+    <div class="wrap">
+      <div>Time-served<span>Plumbing since 2002</span></div>
+      <div>5-star rated<span>130+ Google reviews</span></div>
+      <div>Upfront advice<span>Know what you're paying for</span></div>
+      <div>Local<span>Based in Dundonald</span></div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <h2 class="section-title">What I can help with</h2>
+      <p class="section-lede">From a dripping tap to a full bathroom refit, no job is too small. If I can't help, I'll tell you who can.</p>
+      <div class="services">
+        <div class="service"><h3>Leaks and repairs</h3><p>Finding and fixing leaks fast, including the tricky ones other plumbers have missed.</p></div>
+        <div class="service"><h3>Showers</h3><p>New showers fitted, faulty ones repaired, and drainage problems sorted.</p></div>
+        <div class="service"><h3>Taps and toilets</h3><p>Replacing worn kitchen and bathroom taps, and repairing toilets and cisterns.</p></div>
+        <div class="service"><h3>Bathrooms</h3><p>Bathroom installations and upgrades, done neatly and with minimum disruption.</p></div>
+        <div class="service"><h3>Appliances</h3><p>Washing machines and dishwashers plumbed in properly the first time.</p></div>
+        <div class="service"><h3>New home checks</h3><p>Just moved in? I'll check over the plumbing and fix any issues before they become problems.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap">
+      <!-- EDIT: replace with a photo of Andy on the job -->
+      <div class="about-photo">Photo of Andy at work</div>
+      <div>
+        <h2 class="section-title">Hi, I'm Andy</h2>
+        <p>I'm a time-served plumber and I've been in the trade since 2002. Very Good Plumbing is my own business, so the person you speak to on the phone is the person who turns up to do the job.</p>
+        <p>I believe in giving honest advice, even when that means telling you the fix is simpler than you thought. My customers come back, and they recommend me to their friends and family, because they know they'll get straight answers and work that lasts.</p>
+        <p class="sign">Andy McAllister</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="wrap">
+      <h2 class="section-title">What customers say</h2>
+      <p class="section-lede">A few words from the 130+ people who've left a review on Google.</p>
+      <!-- EDIT: swap these summaries for real Google reviews, with Andy's go-ahead -->
+      <div class="reviews">
+        <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>Came out within a day to replace a leaking kitchen tap, and happily answered questions about the rest of the bathroom too.</p><cite>Google review</cite></div>
+        <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>Gave free advice over the phone that the problem was outside our home, which saved us a lot of money.</p><cite>Google review</cite></div>
+        <div class="review"><div class="stars" aria-label="5 stars">★★★★★</div><p>Helped my daughter with all the plumbing issues in her first house. Nothing was a bother. Would recommend to anyone.</p><cite>Google review</cite></div>
+      </div>
+      <a class="reviews-link" href="#">Read all reviews on Google</a>
+    </div>
+  </section>
+
+  <section class="area" id="area" style="padding-top:0;">
+    <div class="wrap">
+      <div>
+        <h2 class="section-title">Areas I cover</h2>
+        <p class="section-lede" style="margin-bottom:1.2rem;">Based in Dundonald and covering greater Belfast. Further afield? Get in touch, and I'll travel depending on the job.</p>
+        <ul class="towns">
+          <li>Dundonald</li><li>East Belfast</li><li>South Belfast</li><li>North Belfast</li><li>West Belfast</li><li>Comber</li><li>Holywood</li><li>Newtownards</li><li>Castlereagh</li>
+        </ul>
+      </div>
+      <div class="hours">
+        <h3>Opening hours</h3>
+        <table>
+          <tr><td>Monday to Friday</td><td>8am to 5pm</td></tr>
+          <tr><td>Saturday</td><td>Closed</td></tr>
+          <tr><td>Sunday</td><td>Closed</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2 class="section-title">Get in touch</h2>
+      <p class="section-lede">Ring for the quickest answer, or send a message and I'll get back to you.</p>
+      <div class="contact-grid">
+        <div class="contact-ways">
+          <a href="tel:+447418020676"><strong>07418 020676</strong><span>Call or WhatsApp, Monday to Friday</span></a>
+          <a href="mailto:verygoodplumbing@outlook.com"><strong>Email</strong><span>verygoodplumbing@outlook.com</span></a>
+        </div>
+        <form id="enquiry">
+          <label>Your name<input type="text" name="name" autocomplete="name" required></label>
+          <label>Phone number<input type="tel" name="phone" autocomplete="tel" required></label>
+          <label>What do you need help with?<textarea name="message" required></textarea></label>
+          <button type="submit">Send message</button>
+          <p class="form-note">This preview opens your email app with your message filled in.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Very Good Plumbing Ltd, Dundonald, Belfast</span>
+    <span>Concept design by <a href="https://haugheydigital.com">Haughey Digital</a></span>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="c1" href="tel:+447418020676">Call Andy</a>
+  <a class="c2" href="#contact">Message</a>
+</div>
+
+<script>
+  document.getElementById('enquiry').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var f = e.target;
+    var body = 'Name: ' + f.name.value + '\nPhone: ' + f.phone.value + '\n\n' + f.message.value;
+    window.location.href = 'mailto:verygoodplumbing@outlook.com?subject=' +
+      encodeURIComponent('Plumbing enquiry from ' + f.name.value) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
