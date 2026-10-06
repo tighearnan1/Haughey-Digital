@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Russell's Mobile Detailing | Mobile Car Detailing in Fountain Inn, SC (preview)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700;800&family=Saira:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0E1116;
+    --ink-2: #161B22;
+    --ink-3: #212833;
+    --steel: #9AA6B2;
+    --mist: #C9D3DC;
+    --white: #FFFFFF;
+    --cyan: #48C7E8;
+    --cyan-dark: #1E9CC0;
+    --line: #2A323D;
+    --star: #F5B82E;
+    --head: "Saira Condensed", "Arial Narrow", Arial, sans-serif;
+    --body: "Saira", Arial, Helvetica, sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--ink); color: var(--white); font-family: var(--body); font-size: 1.05rem; line-height: 1.6; padding-bottom: 76px; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--cyan); outline-offset: 3px; }
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 0 1.25rem; }
+  h1, h2, h3 { font-family: var(--head); margin: 0; line-height: 1; text-transform: uppercase; letter-spacing: .01em; }
+  .stars { color: var(--star); letter-spacing: .06em; }
+
+  .notice { background: #FFF6E5; color: #6B4A12; font-size: .86rem; text-align: center; padding: .5rem 1rem; }
+  .notice a { font-weight: 600; }
+
+  header.top { position: sticky; top: 0; z-index: 10; background: rgba(14,17,22,.9); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+  header.top .wrap { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding-top: .8rem; padding-bottom: .8rem; }
+  .brand { text-decoration: none; display: flex; align-items: center; gap: .7rem; }
+  .brand-mark { width: 42px; height: 42px; border-radius: 10px; background: linear-gradient(145deg, #2A3542, #10151B); border: 1px solid #36414D; display: grid; place-items: center; }
+  .brand-name { font-family: var(--head); font-weight: 800; font-size: 1.35rem; line-height: 1; text-transform: uppercase; letter-spacing: .02em; }
+  .brand-name small { display: block; font-family: var(--body); text-transform: none; font-weight: 500; font-size: .76rem; color: var(--steel); letter-spacing: 0; margin-top: .2rem; }
+  .head-cta { text-decoration: none; font-weight: 700; background: var(--cyan); color: var(--ink); padding: .6rem 1.1rem; border-radius: 999px; white-space: nowrap; font-size: .95rem; }
+  .head-cta:hover { background: #6FD6EF; }
+  @media (max-width: 520px) { .head-cta { display: none; } }
+
+  /* Hero */
+  .hero { position: relative; overflow: hidden; background: radial-gradient(900px 500px at 80% 10%, rgba(72,199,232,.14), transparent 60%), var(--ink); }
+  .hero .wrap { display: grid; grid-template-columns: 1fr 1.05fr; gap: 3rem; align-items: center; padding-top: 4rem; padding-bottom: 4.5rem; }
+  .pill { display: inline-flex; align-items: center; gap: .5rem; border: 1px solid var(--line); background: var(--ink-2); border-radius: 999px; padding: .35rem .9rem; font-size: .88rem; font-weight: 600; color: var(--mist); margin-bottom: 1.3rem; }
+  .hero h1 { font-size: clamp(3rem, 7.4vw, 5.6rem); font-weight: 800; margin-bottom: 1.2rem; }
+  .hero h1 .shine { background: linear-gradient(100deg, #fff 20%, var(--cyan) 50%, #fff 80%); -webkit-background-clip: text; background-clip: text; color: transparent; background-size: 220% 100%; animation: sheen 6s ease-in-out infinite; }
+  @keyframes sheen { 0%, 100% { background-position: 100% 0; } 50% { background-position: 0 0; } }
+  .hero p.lede { color: var(--mist); font-size: 1.18rem; max-width: 36ch; margin: 0 0 2rem; }
+  .btns { display: flex; flex-wrap: wrap; gap: .75rem; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; text-decoration: none; font-weight: 700; padding: 1rem 1.5rem; border-radius: 999px; font-size: 1.05rem; transition: transform .15s, background .15s; }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-cyan { background: var(--cyan); color: var(--ink); box-shadow: 0 10px 28px rgba(72,199,232,.3); }
+  .btn-cyan:hover { background: #6FD6EF; }
+  .btn-ghost { border: 1px solid #3A4552; color: var(--white); }
+  .btn-ghost:hover { background: var(--ink-2); }
+
+  /* Before / after slider */
+  .ba { position: relative; border-radius: 20px; overflow: hidden; aspect-ratio: 4 / 3; border: 1px solid var(--line); box-shadow: 0 30px 70px rgba(0,0,0,.55); user-select: none; -webkit-user-select: none; touch-action: pan-y; }
+  .panel { position: absolute; inset: 0; }
+  .panel .door { position: absolute; left: 8%; right: 8%; top: 16%; bottom: 14%; border-radius: 18px 26px 10px 10px; }
+  .panel .seam { position: absolute; left: 50%; top: 16%; bottom: 14%; width: 3px; }
+  .panel .handle { position: absolute; top: 34%; width: 15%; height: 6%; border-radius: 999px; }
+  .panel .h1 { left: 30%; } .panel .h2 { left: 62%; }
+  .panel .trim { position: absolute; left: 8%; right: 8%; bottom: 22%; height: 2.5%; border-radius: 2px; }
+
+  .before { background: linear-gradient(180deg, #8A9097 0%, #6C7279 100%); }
+  .before .door { background:
+      radial-gradient(circle at 18% 72%, rgba(92,72,48,.55) 0 3%, transparent 3.5%),
+      radial-gradient(circle at 26% 84%, rgba(92,72,48,.5) 0 4%, transparent 4.6%),
+      radial-gradient(circle at 70% 80%, rgba(92,72,48,.55) 0 5%, transparent 5.6%),
+      radial-gradient(circle at 82% 66%, rgba(92,72,48,.4) 0 2.5%, transparent 3%),
+      radial-gradient(circle at 44% 88%, rgba(92,72,48,.5) 0 6%, transparent 6.6%),
+      radial-gradient(circle at 58% 30%, rgba(255,255,255,.08) 0 1.5%, transparent 2%),
+      repeating-linear-gradient(115deg, rgba(255,255,255,.05) 0 2px, transparent 2px 9px),
+      linear-gradient(180deg, #5C6268 0%, #4B5056 60%, #6A5B48 100%);
+    box-shadow: inset 0 0 40px rgba(0,0,0,.35); }
+  .before .seam { background: rgba(0,0,0,.35); }
+  .before .handle { background: #3E4348; }
+  .before .trim { background: #4A4F55; }
+
+  .after { background: linear-gradient(180deg, #DDE6EE 0%, #B9C7D4 100%); clip-path: inset(0 0 0 50%); }
+  .after .door { background:
+      radial-gradient(circle at 22% 60%, rgba(255,255,255,.9) 0 .6%, transparent 1.1%),
+      radial-gradient(circle at 34% 72%, rgba(255,255,255,.85) 0 .5%, transparent 1%),
+      radial-gradient(circle at 76% 58%, rgba(255,255,255,.9) 0 .7%, transparent 1.2%),
+      radial-gradient(circle at 66% 78%, rgba(255,255,255,.8) 0 .5%, transparent 1%),
+      linear-gradient(162deg, transparent 38%, rgba(255,255,255,.75) 41%, rgba(255,255,255,.1) 45%, transparent 47%),
+      linear-gradient(162deg, transparent 52%, rgba(255,255,255,.25) 54%, transparent 57%),
+      linear-gradient(180deg, #0F2F57 0%, #0A1F3B 48%, #123E73 100%);
+    box-shadow: inset 0 2px 0 rgba(255,255,255,.35), inset 0 -20px 40px rgba(0,0,0,.4); }
+  .after .seam { background: rgba(0,0,0,.45); }
+  .after .handle { background: linear-gradient(180deg, #E8EEF3, #9AA6B2); }
+  .after .trim { background: linear-gradient(90deg, #C9D3DC, #fff, #C9D3DC); }
+
+  .tag { position: absolute; top: 14px; font-family: var(--head); font-weight: 700; text-transform: uppercase; letter-spacing: .06em; font-size: .9rem; padding: .25rem .7rem; border-radius: 999px; z-index: 3; }
+  .tag-b { left: 14px; background: rgba(14,17,22,.75); color: #fff; }
+  .tag-a { right: 14px; background: var(--cyan); color: var(--ink); }
+  .divider { position: absolute; top: 0; bottom: 0; left: 50%; width: 3px; background: #fff; transform: translateX(-50%); z-index: 2; pointer-events: none; box-shadow: 0 0 12px rgba(0,0,0,.4); }
+  .knob { position: absolute; top: 50%; left: 50%; width: 46px; height: 46px; border-radius: 50%; background: #fff; transform: translate(-50%, -50%); display: grid; place-items: center; box-shadow: 0 6px 18px rgba(0,0,0,.4); }
+  .ba input[type=range] { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: ew-resize; margin: 0; z-index: 4; }
+  .ba-caption { margin: .9rem 0 0; color: var(--steel); font-size: .9rem; text-align: center; }
+  @media (max-width: 880px) { .hero .wrap { grid-template-columns: 1fr; gap: 2.5rem; padding-top: 3rem; } }
+
+  /* Trust */
+  .trust { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--ink-2); }
+  .trust .wrap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; padding-top: 1.6rem; padding-bottom: 1.6rem; }
+  .trust div b { display: block; font-family: var(--head); text-transform: uppercase; font-size: 1.25rem; letter-spacing: .02em; }
+  .trust div span { color: var(--steel); font-size: .92rem; }
+  @media (max-width: 800px) { .trust .wrap { grid-template-columns: 1fr 1fr; } }
+
+  section { padding: 5rem 0; }
+  .s-title { font-size: clamp(2.4rem, 5.4vw, 3.8rem); font-weight: 800; margin-bottom: .8rem; }
+  .s-lede { color: var(--mist); max-width: 56ch; margin: 0 0 2.6rem; font-size: 1.1rem; }
+
+  /* Packages */
+  .packages { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
+  .pkg { position: relative; background: var(--ink-2); border: 1px solid var(--line); border-radius: 18px; padding: 1.8rem 1.6rem; display: flex; flex-direction: column; }
+  .pkg.featured { border-color: var(--cyan); background: linear-gradient(180deg, rgba(72,199,232,.1), var(--ink-2) 40%); }
+  .badge { position: absolute; top: -12px; left: 1.6rem; background: var(--cyan); color: var(--ink); font-weight: 700; font-size: .78rem; padding: .2rem .7rem; border-radius: 999px; }
+  .pkg h3 { font-size: 2rem; margin-bottom: .3rem; }
+  .pkg .for { color: var(--steel); margin: 0 0 1.2rem; font-size: .95rem; }
+  .pkg ul { list-style: none; padding: 0; margin: 0 0 1.6rem; display: grid; gap: .55rem; }
+  .pkg li { display: grid; grid-template-columns: 20px 1fr; gap: .55rem; color: var(--mist); font-size: .98rem; line-height: 1.45; }
+  .pkg li svg { margin-top: .2rem; }
+  .pkg .price { margin-top: auto; font-weight: 700; color: var(--white); }
+  .pkg .price span { display: block; color: var(--steel); font-weight: 400; font-size: .88rem; }
+  .addons { margin-top: 1.4rem; display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+  .addons b { margin-right: .3rem; }
+  .addons span { border: 1px solid var(--line); background: var(--ink-2); border-radius: 999px; padding: .35rem .9rem; color: var(--mist); font-size: .93rem; }
+  @media (max-width: 900px) { .packages { grid-template-columns: 1fr; } }
+
+  /* Messes */
+  .messes { background: var(--ink-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .mess-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+  .mess { border: 1px solid var(--line); border-radius: 16px; padding: 1.4rem; background: var(--ink); }
+  .mess .ic { width: 46px; height: 46px; border-radius: 12px; background: rgba(72,199,232,.12); display: grid; place-items: center; margin-bottom: .9rem; }
+  .mess h3 { font-size: 1.45rem; margin-bottom: .3rem; }
+  .mess p { margin: 0; color: var(--steel); font-size: .96rem; line-height: 1.5; }
+  @media (max-width: 900px) { .mess-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 520px) { .mess-grid { grid-template-columns: 1fr; } }
+
+  /* Reviews */
+  .reviews-head { display: flex; justify-content: space-between; align-items: end; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2.4rem; }
+  .score { display: flex; align-items: center; gap: .9rem; border: 1px solid var(--line); border-radius: 16px; padding: .9rem 1.2rem; background: var(--ink-2); }
+  .score b { font-family: var(--head); font-size: 3rem; line-height: 1; }
+  .score span { color: var(--steel); font-size: .92rem; line-height: 1.35; }
+  .reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
+  .review { background: var(--ink-2); border: 1px solid var(--line); border-radius: 18px; padding: 1.6rem; }
+  .review p { margin: .6rem 0 1rem; color: var(--mist); }
+  .review cite { font-style: normal; color: var(--steel); font-size: .88rem; }
+  @media (max-width: 900px) { .reviews { grid-template-columns: 1fr; } }
+
+  /* Booking */
+  .book { background: radial-gradient(800px 400px at 15% 0%, rgba(72,199,232,.12), transparent 60%), var(--ink-2); border-top: 1px solid var(--line); }
+  .book-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 3rem; align-items: start; }
+  .info-list { list-style: none; padding: 0; margin: 0 0 1.5rem; display: grid; gap: .9rem; }
+  .info-list li { display: grid; grid-template-columns: 44px 1fr; gap: .9rem; align-items: center; }
+  .info-list .ic { width: 44px; height: 44px; border-radius: 12px; background: rgba(72,199,232,.12); display: grid; place-items: center; }
+  .info-list b { display: block; }
+  .info-list span { color: var(--steel); font-size: .92rem; }
+  .areas { display: flex; flex-wrap: wrap; gap: .45rem; padding: 0; margin: 0; list-style: none; }
+  .areas li { border: 1px solid var(--line); border-radius: 999px; padding: .3rem .8rem; color: var(--mist); font-size: .9rem; }
+  .gift { margin-top: 1.6rem; border: 1px dashed #4A5663; border-radius: 16px; padding: 1.2rem 1.3rem; display: flex; gap: 1rem; align-items: center; }
+  .gift p { margin: 0; color: var(--mist); font-size: .97rem; }
+  .gift b { color: #fff; }
+  form { background: var(--white); color: var(--ink); border-radius: 20px; padding: 1.8rem; display: grid; gap: 1rem; box-shadow: 0 30px 70px rgba(0,0,0,.45); }
+  form h3 { font-size: 1.9rem; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  label { font-weight: 600; font-size: .92rem; display: grid; gap: .35rem; }
+  input, select, textarea { font: inherit; padding: .8rem .9rem; border: 1px solid #C6CED6; border-radius: 10px; width: 100%; background: #FAFBFC; color: var(--ink); }
+  textarea { min-height: 90px; resize: vertical; }
+  form button { font: inherit; font-weight: 700; background: var(--ink); color: #fff; border: 0; border-radius: 999px; padding: 1rem; cursor: pointer; font-size: 1.05rem; }
+  form button:hover { background: #000; }
+  .form-note { margin: 0; font-size: .84rem; color: #5B6670; text-align: center; }
+  @media (max-width: 900px) { .book-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 480px) { .row { grid-template-columns: 1fr; } }
+
+  footer { border-top: 1px solid var(--line); color: var(--steel); font-size: .88rem; padding: 1.5rem 0; }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .8rem; }
+
+  .callbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: rgba(14,17,22,.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-top: 1px solid var(--line); padding: .6rem .8rem calc(.6rem + env(safe-area-inset-bottom, 0px)); display: none; gap: .6rem; }
+  .callbar a { flex: 1; text-align: center; text-decoration: none; font-weight: 700; padding: .85rem; border-radius: 999px; }
+  .callbar .c1 { background: var(--cyan); color: var(--ink); }
+  .callbar .c2 { border: 1px solid #3A4552; }
+  @media (max-width: 760px) { .callbar { display: flex; } }
+  @media (min-width: 761px) { body { padding-bottom: 0; } }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .hero h1 .shine { animation: none; } * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+<div class="notice">
+  This is a free concept design for Russell's Mobile Detailing, made by <a href="https://haughey-digital.netlify.app">Haughey Digital</a>. It isn't live yet.
+</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 15l2-5.5A2 2 0 0 1 6.9 8h10.2a2 2 0 0 1 1.9 1.5L21 15v3H3z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/><circle cx="7.5" cy="18" r="1.8" fill="#48C7E8"/><circle cx="16.5" cy="18" r="1.8" fill="#48C7E8"/><path d="M12 2.5l.7 1.6 1.6.7-1.6.7-.7 1.6-.7-1.6-1.6-.7 1.6-.7z" fill="#48C7E8"/></svg>
+      </span>
+      <span class="brand-name">Russell's Mobile Detailing<small>We come to you. Fountain Inn and the Upstate</small></span>
+    </a>
+    <a class="head-cta" href="#book">Book a detail</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <!-- EDIT: confirm rating and review count on Google -->
+        <div class="pill"><span class="stars" aria-hidden="true">★★★★★</span> 4.9 from 60 Google reviews</div>
+        <h1>Brand new <span class="shine">without leaving</span> your driveway.</h1>
+        <p class="lede">Professional mobile detailing at your home or workplace. Kids, dogs, beach sand, muddy trucks. We'll make it look like the day you bought it.</p>
+        <div class="btns">
+          <a class="btn btn-cyan" href="#book">Request a booking</a>
+          <a class="btn btn-ghost" href="tel:+18645340916">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg>
+            (864) 534-0916
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="ba" id="ba">
+          <div class="panel before" aria-hidden="true"><div class="door"></div><div class="seam"></div><div class="handle h1"></div><div class="handle h2"></div><div class="trim"></div></div>
+          <div class="panel after" id="after" aria-hidden="true"><div class="door"></div><div class="seam"></div><div class="handle h1"></div><div class="handle h2"></div><div class="trim"></div></div>
+          <span class="tag tag-b">Before</span>
+          <span class="tag tag-a">After</span>
+          <div class="divider" id="divider"><span class="knob"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0E1116" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l-5 6 5 6M15 6l5 6-5 6"/></svg></span></div>
+          <input type="range" min="0" max="100" value="50" id="baRange" aria-label="Drag to compare before and after">
+        </div>
+        <p class="ba-caption">Drag to compare. Your real before-and-after photos go here.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="trust">
+    <div class="wrap">
+      <div><b>We come to you</b><span>Home, work or anywhere</span></div>
+      <div><b>5-star results</b><span>Loved by local drivers</span></div>
+      <div><b>Cars, trucks, SUVs</b><span>Every size, inside and out</span></div>
+      <div><b>Gift certificates</b><span>The gift everyone wants</span></div>
+    </div>
+  </div>
+
+  <section id="packages">
+    <div class="wrap">
+      <h2 class="s-title">Detailing packages</h2>
+      <p class="s-lede">Pick the clean you need. Every package is done by hand, at your place, with no rushing.</p>
+      <!-- EDIT: confirm package names, what's included and prices with Russ -->
+      <div class="packages">
+        <div class="pkg">
+          <h3>Interior</h3>
+          <p class="for">For crumbs, pet hair, spills and smells</p>
+          <ul>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#48C7E8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Deep vacuum, seats, carpets and mats</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#48C7E8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Dash, console, vents and crevices</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#48C7E8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Stain treatment and leather care</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#48C7E8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Streak-free glass inside</li>
+          </ul>
+          <p class="price">Quote on request<span>Depends on size and condition</span></p>
+        </div>
+        <div class="pkg featured">
+          <span class="badge">Most popular</span>
+          <h3>Full detail</h3>
+          <p class="for">Inside and out, brand-new feeling</p>
+          <ul>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#48C7E8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Everything in the interior detail</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#48C7E8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Everything in the exterior detail</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#48C7E8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Door jambs and finishing touches</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#48C7E8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Final walk-around with you</li>
+          </ul>
+          <p class="price">Quote on request<span>Best value for a full reset</span></p>
+        </div>
+        <div class="pkg">
+          <h3>Exterior</h3>
+          <p class="for">For mud, dust, bugs and dull paint</p>
+          <ul>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#48C7E8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Hand wash and foam bath</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#48C7E8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Wheels, tires and wheel wells</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#48C7E8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Wax for shine and protection</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#48C7E8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Glass and trim cleaned</li>
+          </ul>
+          <p class="price">Quote on request<span>Depends on size and condition</span></p>
+        </div>
+      </div>
+      <div class="addons"><b>Add-ons:</b><span>Pet hair removal</span><span>Odor treatment</span><span>Headlight restoration</span><span>Engine bay clean</span></div>
+    </div>
+  </section>
+
+  <section class="messes">
+    <div class="wrap">
+      <h2 class="s-title">No mess too big</h2>
+      <p class="s-lede">Our customers have thrown everything at us. It all comes out.</p>
+      <div class="mess-grid">
+        <div class="mess"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#48C7E8" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="3"/><path d="M6 21v-2a6 6 0 0 1 12 0v2"/></svg></span><h3>Kids</h3><p>Crushed snacks, sticky seats and car seat crumbs.</p></div>
+        <div class="mess"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#48C7E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="9" r="1.6"/><circle cx="9" cy="5.5" r="1.6"/><circle cx="15" cy="5.5" r="1.6"/><circle cx="19" cy="9" r="1.6"/><path d="M12 11c-3 0-5 3.5-5 6a2.5 2.5 0 0 0 3.5 2.2c1-.4 2-.4 3 0A2.5 2.5 0 0 0 17 17c0-2.5-2-6-5-6z"/></svg></span><h3>Pets</h3><p>Dog hair, muddy paws and the smells they leave behind.</p></div>
+        <div class="mess"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#48C7E8" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="3.5"/><path d="M3 18c2 0 2-1.5 4.5-1.5S10 18 12 18s2-1.5 4.5-1.5S19 18 21 18"/></svg></span><h3>Beach trips</h3><p>Sand in every carpet fiber and seat seam.</p></div>
+        <div class="mess"><span class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#48C7E8" stroke-width="2" stroke-linejoin="round"><path d="M3 16l2-5h9l3 3h3v2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></span><h3>Work trucks</h3><p>Red clay, mud and months of job-site dust.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="wrap">
+      <div class="reviews-head">
+        <h2 class="s-title" style="margin:0">Happy drivers</h2>
+        <div class="score"><b>4.9</b><span><span class="stars" aria-hidden="true">★★★★★</span><br>60 Google reviews</span></div>
+      </div>
+      <!-- EDIT: swap these summaries for real Google reviews, with Russ's go-ahead -->
+      <div class="reviews">
+        <div class="review"><span class="stars" aria-label="5 stars">★★★★★</span><p>Dogs, a toddler and a whole lot of mud in the back. Somehow it came out looking like a brand-new car.</p><cite>Google review</cite></div>
+        <div class="review"><span class="stars" aria-label="5 stars">★★★★★</span><p>Had my pickup fully detailed and the difference was huge. Fast, professional and great value compared to others nearby.</p><cite>Google review</cite></div>
+        <div class="review"><span class="stars" aria-label="5 stars">★★★★★</span><p>Got an interior detail as a gift and it was one of the best presents I've had. Worth waiting for a spot.</p><cite>Google review</cite></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="book" id="book">
+    <div class="wrap book-grid">
+      <div>
+        <h2 class="s-title">Book your detail</h2>
+        <p class="s-lede">Send a request and Russ will text you back to confirm a time. Spots fill up, so book ahead.</p>
+        <ul class="info-list">
+          <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="#48C7E8"/></svg></span><div><b><a href="tel:+18645340916" style="text-decoration:none">(864) 534-0916</a></b><span>Call or text</span></div></li>
+          <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#48C7E8" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>Monday to Friday, 7am to 5pm</b><span>Closed weekends</span></div></li>
+        </ul>
+        <!-- EDIT: confirm service area -->
+        <ul class="areas"><li>Fountain Inn</li><li>Simpsonville</li><li>Mauldin</li><li>Greenville</li><li>Laurens</li><li>Gray Court</li></ul>
+        <div class="gift">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#48C7E8" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="18" height="12" rx="1.5"/><path d="M3 13h18M12 9v12M12 9c-2-4-6-4-6-1.5S10 9 12 9zm0 0c2-4 6-4 6-1.5S14 9 12 9z"/></svg>
+          <p><b>Gift certificates available.</b> Birthdays, holidays, new parents. Just ask when you book.</p>
+        </div>
+      </div>
+      <form id="bookForm">
+        <h3>Request a booking</h3>
+        <div class="row">
+          <label>Your name<input name="name" type="text" autocomplete="name" required></label>
+          <label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
+        </div>
+        <div class="row">
+          <label>Vehicle<input name="vehicle" type="text" placeholder="e.g. 2021 Ram 1500" required></label>
+          <label>Package
+            <select name="pkg">
+              <option>Full detail</option>
+              <option>Interior</option>
+              <option>Exterior</option>
+              <option>Not sure yet</option>
+            </select>
+          </label>
+        </div>
+        <label>Preferred day and location<input name="when" type="text" placeholder="e.g. Thursday morning, at home in Simpsonville"></label>
+        <label>Anything we should know?<textarea name="notes" placeholder="Pet hair, stains, sand..."></textarea></label>
+        <button type="submit">Send booking request</button>
+        <p class="form-note">This preview opens a text message to Russ with your details filled in.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Russell's Mobile Detailing, Fountain Inn, SC</span>
+    <span>Concept design by <a href="https://haughey-digital.netlify.app">Haughey Digital</a></span>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="c1" href="#book">Book a detail</a>
+  <a class="c2" href="tel:+18645340916">Call Russ</a>
+</div>
+
+<script>
+  (function () {
+    var range = document.getElementById('baRange');
+    var after = document.getElementById('after');
+    var divider = document.getElementById('divider');
+    function set(v) { after.style.clipPath = 'inset(0 0 0 ' + v + '%)'; divider.style.left = v + '%'; }
+    range.addEventListener('input', function () { set(range.value); });
+    set(range.value);
+    // gentle hint animation until the visitor touches it
+    var touched = false;
+    range.addEventListener('pointerdown', function () { touched = true; });
+    range.addEventListener('keydown', function () { touched = true; });
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      var t = 0;
+      var timer = setInterval(function () {
+        if (touched) { clearInterval(timer); return; }
+        t += 0.05;
+        var v = 50 + Math.sin(t) * 22;
+        range.value = v; set(v);
+      }, 40);
+      setTimeout(function () { clearInterval(timer); if (!touched) { range.value = 50; set(50); } }, 6500);
+    }
+  })();
+
+  document.getElementById('bookForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var f = e.target;
+    var msg = 'Hi Russ, booking request:\nName: ' + f.name.value + '\nPhone: ' + f.phone.value + '\nVehicle: ' + f.vehicle.value + '\nPackage: ' + f.pkg.value + (f.when.value ? '\nWhen/where: ' + f.when.value : '') + (f.notes.value ? '\nNotes: ' + f.notes.value : '');
+    location.href = 'sms:+18645340916?&body=' + encodeURIComponent(msg);
+  });
+</script>
+</body>
+</html>
